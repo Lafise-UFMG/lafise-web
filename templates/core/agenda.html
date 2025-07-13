@@ -1,0 +1,301 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ page_title }} - LAFISE{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <i class="fas fa-calendar-alt me-3"></i>Agenda do Laboratório
+                </h1>
+                <p class="section-subtitle">
+                    Acompanhe os eventos, reuniões e atividades programadas do LAFISE
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="row mb-4">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label">Tipo de Evento</label>
+                            <select class="form-select">
+                                <option selected>Todos os tipos</option>
+                                <option>Reuniões</option>
+                                <option>Seminários</option>
+                                <option>Defesas</option>
+                                <option>Congressos</option>
+                                <option>Treinamentos</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Mês</label>
+                            <select class="form-select">
+                                <option selected>Janeiro 2025</option>
+                                <option>Fevereiro 2025</option>
+                                <option>Março 2025</option>
+                                <option>Abril 2025</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                                <option selected>Todos</option>
+                                <option>Confirmado</option>
+                                <option>Pendente</option>
+                                <option>Cancelado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">&nbsp;</label>
+                            <button class="btn btn-custom-red w-100">
+                                <i class="fas fa-filter me-1"></i>Filtrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eventos Próximos -->
+    <div class="row mb-4">
+        <div class="col-lg-12">
+            <h3 class="text-custom-red mb-3">
+                <i class="fas fa-clock me-2"></i>Próximos Eventos
+            </h3>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Evento 1 -->
+        <div class="col-lg-6">
+            <div class="card border-start border-custom-red border-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title text-custom-red">Reunião Semanal do Laboratório</h5>
+                        <span class="badge bg-success">Confirmado</span>
+                    </div>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-calendar me-1"></i>15 de Janeiro, 2025
+                        <i class="fas fa-clock ms-3 me-1"></i>14:00 - 16:00
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-map-marker-alt me-1"></i>Sala de Reuniões - LAFISE
+                    </p>
+                    <p class="card-text">
+                        Reunião semanal para discussão de projetos em andamento, apresentação de resultados e planejamento de atividades.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-user me-1"></i>Organizador: Prof. Dr. João Silva
+                        </small>
+                        <button class="btn btn-outline-custom-red btn-sm">
+                            <i class="fas fa-info-circle me-1"></i>Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Evento 2 -->
+        <div class="col-lg-6">
+            <div class="card border-start border-warning border-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title text-custom-red">Seminário: Novas Técnicas em Fisiologia</h5>
+                        <span class="badge bg-warning text-dark">Pendente</span>
+                    </div>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-calendar me-1"></i>22 de Janeiro, 2025
+                        <i class="fas fa-clock ms-3 me-1"></i>16:00 - 18:00
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-map-marker-alt me-1"></i>Auditório Principal - EEFFTO
+                    </p>
+                    <p class="card-text">
+                        Apresentação sobre metodologias inovadoras aplicadas à pesquisa em fisiologia do exercício.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-user me-1"></i>Palestrante: Dra. Maria Santos
+                        </small>
+                        <button class="btn btn-outline-custom-red btn-sm">
+                            <i class="fas fa-info-circle me-1"></i>Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Evento 3 -->
+        <div class="col-lg-6">
+            <div class="card border-start border-custom-red border-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title text-custom-red">Defesa de Dissertação</h5>
+                        <span class="badge bg-success">Confirmado</span>
+                    </div>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-calendar me-1"></i>28 de Janeiro, 2025
+                        <i class="fas fa-clock ms-3 me-1"></i>09:00 - 11:00
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-map-marker-alt me-1"></i>Sala de Defesas - EEFFTO
+                    </p>
+                    <p class="card-text">
+                        "Efeitos do treinamento intervalado de alta intensidade na capacidade cardiorrespiratória de atletas"
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-user me-1"></i>Mestrando: Carlos Oliveira
+                        </small>
+                        <button class="btn btn-outline-custom-red btn-sm">
+                            <i class="fas fa-info-circle me-1"></i>Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Evento 4 -->
+        <div class="col-lg-6">
+            <div class="card border-start border-info border-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title text-custom-red">Treinamento: Uso de Equipamentos</h5>
+                        <span class="badge bg-info">Treinamento</span>
+                    </div>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-calendar me-1"></i>05 de Fevereiro, 2025
+                        <i class="fas fa-clock ms-3 me-1"></i>13:00 - 17:00
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-map-marker-alt me-1"></i>Laboratório - LAFISE
+                    </p>
+                    <p class="card-text">
+                        Treinamento para novos integrantes sobre o uso correto dos equipamentos do laboratório.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                            <i class="fas fa-user me-1"></i>Instrutor: Técnico Pedro Lima
+                        </small>
+                        <button class="btn btn-outline-custom-red btn-sm">
+                            <i class="fas fa-info-circle me-1"></i>Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendário do Mês -->
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-calendar me-2"></i>Calendário - Janeiro 2025
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Dom</th>
+                                    <th>Seg</th>
+                                    <th>Ter</th>
+                                    <th>Qua</th>
+                                    <th>Qui</th>
+                                    <th>Sex</th>
+                                    <th>Sáb</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-muted">29</td>
+                                    <td class="text-muted">30</td>
+                                    <td class="text-muted">31</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td class="bg-custom-red text-white"><strong>15</strong><br><small>Reunião</small></td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td class="bg-warning"><strong>22</strong><br><small>Seminário</small></td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td class="bg-success text-white"><strong>28</strong><br><small>Defesa</small></td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td class="text-muted">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ações Rápidas -->
+    <div class="row mt-4">
+        <div class="col-lg-12">
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ações Rápidas</h5>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-custom-red">
+                            <i class="fas fa-plus me-1"></i>Novo Evento
+                        </button>
+                        <button class="btn btn-outline-custom-red">
+                            <i class="fas fa-download me-1"></i>Exportar Agenda
+                        </button>
+                        <button class="btn btn-outline-custom-red">
+                            <i class="fas fa-bell me-1"></i>Configurar Notificações
+                        </button>
+                        <button class="btn btn-outline-custom-red">
+                            <i class="fas fa-sync me-1"></i>Sincronizar Calendário
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

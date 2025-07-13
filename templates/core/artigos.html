@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ page_title }} - LAFISE{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="section-header">
+        <h1 class="section-title">
+            <i class="fas fa-newspaper me-3"></i>{{ page_title }}
+        </h1>
+        <p class="section-subtitle">Publicações científicas do laboratório</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <p>Esta página está em desenvolvimento. Em breve teremos a lista completa dos artigos publicados pelos pesquisadores do LAFISE.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

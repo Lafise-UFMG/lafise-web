@@ -1,0 +1,297 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ page_title }} - LAFISE{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <i class="fas fa-history me-3"></i>História do Laboratório
+                </h1>
+                <p class="section-subtitle">
+                    Conheça a trajetória e evolução do LAFISE desde sua criação
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="timeline">
+                        <!-- 2008 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-custom-red text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2008</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Fundação do LAFISE</h5>
+                                        <p class="card-text">
+                                            O Laboratório de Fisiologia do Exercício foi criado como parte da 
+                                            Escola de Educação Física, Fisioterapia e Terapia Ocupacional da UFMG, 
+                                            com o objetivo de desenvolver pesquisas de excelência em fisiologia aplicada ao exercício.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-user me-1"></i>Fundador: Prof. Dr. João Silva Santos
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2010 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2010</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Primeiros Equipamentos</h5>
+                                        <p class="card-text">
+                                            Aquisição dos primeiros equipamentos especializados: analisador de gases 
+                                            metabólicos, eletrocardiógrafo e sistema de análise de lactato sanguíneo.
+                                        </p>
+                                        <div class="d-flex gap-2">
+                                            <span class="badge bg-light text-dark">Analisador de Gases</span>
+                                            <span class="badge bg-light text-dark">ECG</span>
+                                            <span class="badge bg-light text-dark">Lactato</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2012 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-custom-red text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2012</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Primeiras Publicações</h5>
+                                        <p class="card-text">
+                                            Publicação dos primeiros artigos científicos em periódicos internacionais, 
+                                            estabelecendo a reputação do laboratório na comunidade científica.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-book me-1"></i>5 artigos publicados no primeiro ano
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2015 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2015</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Expansão da Equipe</h5>
+                                        <p class="card-text">
+                                            Contratação de novos pesquisadores e início dos programas de pós-graduação 
+                                            stricto sensu. O laboratório passou a orientar mestrandos e doutorandos.
+                                        </p>
+                                        <div class="row mt-2">
+                                            <div class="col-md-4">
+                                                <small class="text-muted">3 Pesquisadores</small>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <small class="text-muted">8 Pós-graduandos</small>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <small class="text-muted">5 Graduandos</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2018 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-custom-red text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2018</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Modernização Tecnológica</h5>
+                                        <p class="card-text">
+                                            Grande investimento em modernização dos equipamentos e implementação 
+                                            de sistemas digitais de coleta e análise de dados.
+                                        </p>
+                                        <div class="d-flex gap-2">
+                                            <span class="badge bg-light text-dark">Sistema Digital</span>
+                                            <span class="badge bg-light text-dark">Eletromiografia</span>
+                                            <span class="badge bg-light text-dark">Biomecânica</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2020 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2020</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Adaptação à Pandemia</h5>
+                                        <p class="card-text">
+                                            Durante a pandemia de COVID-19, o laboratório adaptou suas atividades, 
+                                            desenvolvendo protocolos seguros e iniciando pesquisas sobre os efeitos 
+                                            da pandemia na atividade física.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-shield-alt me-1"></i>Protocolos de segurança implementados
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2022 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-custom-red text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2022</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Reconhecimento Nacional</h5>
+                                        <p class="card-text">
+                                            O LAFISE foi reconhecido como um dos laboratórios de referência em 
+                                            fisiologia do exercício no Brasil, com mais de 50 publicações científicas 
+                                            e parcerias internacionais estabelecidas.
+                                        </p>
+                                        <div class="row mt-2">
+                                            <div class="col-md-4">
+                                                <small class="text-muted"><strong>50+</strong> Publicações</small>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <small class="text-muted"><strong>10</strong> Parcerias Internacionais</small>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <small class="text-muted"><strong>100+</strong> Pesquisas Concluídas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2025 -->
+                        <div class="row mb-4">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" 
+                                     style="width: 80px; height: 80px;">
+                                    <h5 class="fw-bold mb-0">2025</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-custom-red">Sistema de Documentação</h5>
+                                        <p class="card-text">
+                                            Lançamento do sistema digital de documentação e gerenciamento de materiais 
+                                            e métodos do laboratório, facilitando o acesso às informações e protocolos.
+                                        </p>
+                                        <div class="d-flex gap-2">
+                                            <span class="badge bg-light text-dark">Sistema Digital</span>
+                                            <span class="badge bg-light text-dark">Gestão de Dados</span>
+                                            <span class="badge bg-light text-dark">Protocolos Online</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Estatísticas Históricas -->
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-4">17 Anos de História em Números</h5>
+                    <div class="row text-center">
+                        <div class="col-md-2">
+                            <div class="bg-custom-red text-white rounded p-3 mb-3">
+                                <h3 class="fw-bold">50+</h3>
+                                <p class="mb-0 small">Artigos Científicos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="bg-white text-custom-red rounded p-3 mb-3">
+                                <h3 class="fw-bold">100+</h3>
+                                <p class="mb-0 small">Pesquisas Realizadas</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="bg-custom-red text-white rounded p-3 mb-3">
+                                <h3 class="fw-bold">30+</h3>
+                                <p class="mb-0 small">Pesquisadores Formados</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="bg-white text-custom-red rounded p-3 mb-3">
+                                <h3 class="fw-bold">15</h3>
+                                <p class="mb-0 small">Equipamentos Especializados</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="bg-custom-red text-white rounded p-3 mb-3">
+                                <h3 class="fw-bold">10</h3>
+                                <p class="mb-0 small">Parcerias Internacionais</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="bg-white text-custom-red rounded p-3 mb-3">
+                                <h3 class="fw-bold">500+</h3>
+                                <p class="mb-0 small">Participantes de Pesquisa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

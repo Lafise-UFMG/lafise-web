@@ -1,0 +1,410 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ page_title }} - LAFISE{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <i class="fas fa-users me-3"></i>Integrantes do Laboratório
+                </h1>
+                <p class="section-subtitle">
+                    Conheça nossa equipe de pesquisadores, estudantes e colaboradores
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coordenação -->
+    <div class="row mb-5">
+        <div class="col-lg-12">
+            <h3 class="text-custom-red mb-4">
+                <i class="fas fa-crown me-2"></i>Coordenação
+            </h3>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="bg-custom-red rounded-circle d-inline-flex align-items-center justify-content-center" 
+                             style="width: 100px; height: 100px;">
+                            <i class="fas fa-user text-white" style="font-size: 2.5rem;"></i>
+                        </div>
+                    </div>
+                    <h5 class="card-title">Prof. Dr. João Silva Santos</h5>
+                    <p class="text-muted">Coordenador do LAFISE</p>
+                    <p class="card-text">
+                        Doutor em Ciências do Esporte pela UFMG. Especialista em fisiologia cardiovascular 
+                        e adaptações ao exercício físico.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <span class="badge bg-light text-dark">Fisiologia Cardiovascular</span>
+                        <span class="badge bg-light text-dark">Exercício</span>
+                        <span class="badge bg-light text-dark">Hipertensão</span>
+                    </div>
+                    <div class="mt-3">
+                        <a href="mailto:joao.silva@ufmg.br" class="btn btn-outline-custom-red btn-sm me-2">
+                            <i class="fas fa-envelope me-1"></i>Email
+                        </a>
+                        <a href="#" class="btn btn-outline-custom-red btn-sm">
+                            <i class="fas fa-graduation-cap me-1"></i>Lattes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="bg-custom-red rounded-circle d-inline-flex align-items-center justify-content-center" 
+                             style="width: 100px; height: 100px;">
+                            <i class="fas fa-user text-white" style="font-size: 2.5rem;"></i>
+                        </div>
+                    </div>
+                    <h5 class="card-title">Profa. Dra. Maria Fernanda Lima</h5>
+                    <p class="text-muted">Vice-Coordenadora</p>
+                    <p class="card-text">
+                        Doutora em Educação Física pela USP. Pesquisadora em metabolismo energético 
+                        e performance esportiva.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <span class="badge bg-light text-dark">Metabolismo</span>
+                        <span class="badge bg-light text-dark">Performance</span>
+                        <span class="badge bg-light text-dark">Nutrição</span>
+                    </div>
+                    <div class="mt-3">
+                        <a href="mailto:maria.lima@ufmg.br" class="btn btn-outline-custom-red btn-sm me-2">
+                            <i class="fas fa-envelope me-1"></i>Email
+                        </a>
+                        <a href="#" class="btn btn-outline-custom-red btn-sm">
+                            <i class="fas fa-graduation-cap me-1"></i>Lattes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pesquisadores -->
+    <div class="row mb-5">
+        <div class="col-lg-12">
+            <h3 class="text-custom-red mb-4">
+                <i class="fas fa-microscope me-2"></i>Pesquisadores
+            </h3>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-user text-white" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                    <h6 class="card-title">Dr. Carlos Eduardo Mendes</h6>
+                    <p class="text-muted small">Pesquisador Associado</p>
+                    <p class="card-text small">
+                        Especialista em biomecânica do exercício e análise de movimento.
+                    </p>
+                    <div class="d-flex justify-content-center gap-1 mb-2">
+                        <span class="badge bg-light text-dark small">Biomecânica</span>
+                        <span class="badge bg-light text-dark small">Movimento</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-user text-white" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                    <h6 class="card-title">Dra. Ana Paula Rodrigues</h6>
+                    <p class="text-muted small">Pesquisadora Colaboradora</p>
+                    <p class="card-text small">
+                        Foco em adaptações musculares ao treinamento de força.
+                    </p>
+                    <div class="d-flex justify-content-center gap-1 mb-2">
+                        <span class="badge bg-light text-dark small">Força</span>
+                        <span class="badge bg-light text-dark small">Hipertrofia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="bg-secondary rounded-circle d-inline-flex align-items-center justify-content-center" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-user text-white" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                    <h6 class="card-title">Dr. Roberto Silva Costa</h6>
+                    <p class="text-muted small">Pesquisador Visitante</p>
+                    <p class="card-text small">
+                        Especialista em fisiologia respiratória durante o exercício.
+                    </p>
+                    <div class="d-flex justify-content-center gap-1 mb-2">
+                        <span class="badge bg-light text-dark small">Respiração</span>
+                        <span class="badge bg-light text-dark small">VO2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Estudantes de Pós-graduação -->
+    <div class="row mb-5">
+        <div class="col-lg-12">
+            <h3 class="text-custom-red mb-4">
+                <i class="fas fa-graduation-cap me-2"></i>Pós-graduandos
+            </h3>
+        </div>
+        
+        <!-- Doutorandos -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h6 class="mb-0"><i class="fas fa-user-graduate me-2"></i>Doutorandos</h6>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Lucas Almeida Santos</h6>
+                                    <p class="mb-1 small">Efeitos do treinamento intervalado em pacientes cardiopatas</p>
+                                    <small class="text-muted">Orientador: Prof. Dr. João Silva</small>
+                                </div>
+                                <small class="text-muted">2022-2026</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Fernanda Costa Lima</h6>
+                                    <p class="mb-1 small">Adaptações neuromusculares ao treinamento concorrente</p>
+                                    <small class="text-muted">Orientadora: Profa. Dra. Maria Fernanda</small>
+                                </div>
+                                <small class="text-muted">2021-2025</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Pedro Henrique Oliveira</h6>
+                                    <p class="mb-1 small">Biomarcadores de fadiga muscular no exercício</p>
+                                    <small class="text-muted">Orientador: Dr. Carlos Eduardo</small>
+                                </div>
+                                <small class="text-muted">2023-2027</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mestrandos -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h6 class="mb-0"><i class="fas fa-user-graduate me-2"></i>Mestrandos</h6>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Ana Beatriz Silva</h6>
+                                    <p class="mb-1 small">Respostas cardiovasculares ao exercício resistido</p>
+                                    <small class="text-muted">Orientador: Prof. Dr. João Silva</small>
+                                </div>
+                                <small class="text-muted">2024-2026</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Rafael Pereira Costa</h6>
+                                    <p class="mb-1 small">Economia de corrida em corredores de longa distância</p>
+                                    <small class="text-muted">Orientadora: Dra. Ana Paula</small>
+                                </div>
+                                <small class="text-muted">2023-2025</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Mariana Sousa Dias</h6>
+                                    <p class="mb-1 small">Treinamento de força em idosos: aspectos funcionais</p>
+                                    <small class="text-muted">Orientadora: Profa. Dra. Maria Fernanda</small>
+                                </div>
+                                <small class="text-muted">2024-2026</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Thiago Macedo Reis</h6>
+                                    <p class="mb-1 small">Suplementação e performance em atletas de endurance</p>
+                                    <small class="text-muted">Orientador: Dr. Roberto Silva</small>
+                                </div>
+                                <small class="text-muted">2024-2026</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Iniciação Científica -->
+    <div class="row mb-5">
+        <div class="col-lg-12">
+            <h3 class="text-custom-red mb-4">
+                <i class="fas fa-flask me-2"></i>Iniciação Científica
+            </h3>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3">
+                                <h6 class="fw-bold">João Pedro Martins</h6>
+                                <small class="text-muted">Análise biomecânica da corrida</small>
+                                <br>
+                                <span class="badge bg-light text-dark mt-2">PIBIC/CNPq</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3">
+                                <h6 class="fw-bold">Isabella Santos Lima</h6>
+                                <small class="text-muted">Fadiga muscular em exercícios isométricos</small>
+                                <br>
+                                <span class="badge bg-light text-dark mt-2">PROBIC/FAPEMIG</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3">
+                                <h6 class="fw-bold">Gabriel Costa Nunes</h6>
+                                <small class="text-muted">Variabilidade da frequência cardíaca</small>
+                                <br>
+                                <span class="badge bg-light text-dark mt-2">Voluntário</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3">
+                                <h6 class="fw-bold">Camila Oliveira Silva</h6>
+                                <small class="text-muted">Exercício e função endotelial</small>
+                                <br>
+                                <span class="badge bg-light text-dark mt-2">PIBIC/UFMG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Equipe Técnica -->
+    <div class="row mb-5">
+        <div class="col-lg-12">
+            <h3 class="text-custom-red mb-4">
+                <i class="fas fa-tools me-2"></i>Equipe Técnica
+            </h3>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="bg-info rounded-circle d-inline-flex align-items-center justify-content-center" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-wrench text-white" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                    <h6 class="card-title">Pedro Lima Santos</h6>
+                    <p class="text-muted">Técnico de Laboratório</p>
+                    <p class="card-text small">
+                        Responsável pela manutenção e calibração dos equipamentos, 
+                        além do suporte técnico nas coletas de dados.
+                    </p>
+                    <div class="d-flex justify-content-center gap-1">
+                        <span class="badge bg-light text-dark small">Manutenção</span>
+                        <span class="badge bg-light text-dark small">Calibração</span>
+                        <span class="badge bg-light text-dark small">Suporte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <div class="bg-warning rounded-circle d-inline-flex align-items-center justify-content-center" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-clipboard-list text-white" style="font-size: 2rem;"></i>
+                        </div>
+                    </div>
+                    <h6 class="card-title">Sandra Maria Costa</h6>
+                    <p class="text-muted">Secretária Administrativa</p>
+                    <p class="card-text small">
+                        Responsável pela gestão administrativa do laboratório, 
+                        agendamentos e contato com participantes de pesquisa.
+                    </p>
+                    <div class="d-flex justify-content-center gap-1">
+                        <span class="badge bg-light text-dark small">Administração</span>
+                        <span class="badge bg-light text-dark small">Agendamento</span>
+                        <span class="badge bg-light text-dark small">Contato</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Estatísticas da Equipe -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-4">Estatísticas da Equipe</h5>
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="bg-custom-red text-white rounded p-3">
+                                <h3 class="fw-bold">15</h3>
+                                <p class="mb-0">Total de Integrantes</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="bg-white text-custom-red rounded p-3">
+                                <h3 class="fw-bold">5</h3>
+                                <p class="mb-0">Pesquisadores</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="bg-white text-custom-red rounded p-3">
+                                <h3 class="fw-bold">7</h3>
+                                <p class="mb-0">Pós-graduandos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="bg-custom-red text-white rounded p-3">
+                                <h3 class="fw-bold">4</h3>
+                                <p class="mb-0">Graduandos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

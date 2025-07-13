@@ -1,0 +1,338 @@
+/* Custom CSS para LAFISE - Laboratório de Fisiologia do Exercício */
+
+/* Cores principais */
+:root {
+    --bs-red: #dc3545;
+    --custom-red: #cc2936;
+    --custom-dark-red: #a02128;
+    --custom-light-red: #e85a5a;
+}
+
+/* Classe customizada para vermelho */
+.bg-custom-red {
+    background-color: var(--custom-red) !important;
+}
+
+.text-custom-red {
+    color: var(--custom-red) !important;
+}
+
+.border-custom-red {
+    border-color: var(--custom-red) !important;
+}
+
+/* Ajustes para navbar fixa */
+.main-content {
+    padding-top: 80px;
+    min-height: calc(100vh - 200px);
+}
+
+/* Estilo da navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--custom-dark-red);
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: var(--custom-dark-red);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--custom-red);
+    color: white;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, var(--custom-red) 0%, var(--custom-dark-red) 100%);
+    color: white;
+    padding: 4rem 0;
+    margin-top: -80px;
+    padding-top: calc(4rem + 80px);
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: var(--custom-red);
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: bold;
+}
+
+.card-title {
+    color: var(--custom-red);
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-custom-red {
+    background-color: var(--custom-red);
+    border-color: var(--custom-red);
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-red:hover {
+    background-color: var(--custom-dark-red);
+    border-color: var(--custom-dark-red);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-custom-red {
+    color: var(--custom-red);
+    border-color: var(--custom-red);
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom-red:hover {
+    background-color: var(--custom-red);
+    border-color: var(--custom-red);
+    color: white;
+}
+
+/* Section headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--custom-red);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Content sections */
+.content-section {
+    padding: 4rem 0;
+}
+
+.content-section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Logo styling */
+.logo-container {
+    max-width: 200px;
+    margin: 0 auto 2rem auto;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Lists */
+.list-group-item {
+    border-left: 3px solid var(--custom-red);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    border-left-color: var(--custom-dark-red);
+}
+
+/* Tables */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+    background-color: var(--custom-red);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+/* Icons */
+.icon-feature {
+    font-size: 3rem;
+    color: var(--custom-red);
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .main-content {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+/* Animation utilities */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+}
+
+/* Custom spacing */
+.py-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Loading animation */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Form enhancements */
+.form-control:focus {
+    border-color: var(--custom-red);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--custom-red);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Badge customization */
+.badge-custom {
+    background-color: var(--custom-red);
+    color: white;
+}
+
+/* Alert customization */
+.alert-custom {
+    background-color: rgba(204, 41, 54, 0.1);
+    border-color: var(--custom-red);
+    color: var(--custom-dark-red);
+}
+
+/* Progress bar */
+.progress-bar-custom {
+    background-color: var(--custom-red);
+}

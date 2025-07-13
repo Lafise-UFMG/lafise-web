@@ -1,0 +1,325 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ page_title }} - LAFISE{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <i class="fas fa-laptop-code me-3"></i>Métodos e Softwares
+                </h1>
+                <p class="section-subtitle">
+                    Ferramentas computacionais e metodologias utilizadas em nossas pesquisas
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Softwares de Análise -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-chart-line me-2"></i>Softwares de Análise de Dados</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="border rounded p-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fab fa-r-project text-custom-red me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">R Statistical Software</h6>
+                                        <small class="text-muted">Análise estatística e visualização</small>
+                                    </div>
+                                </div>
+                                <p class="small mb-2">Software livre para computação estatística e gráficos. Utilizamos principalmente para análises estatísticas complexas e criação de gráficos científicos.</p>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-dark">Estatística</span>
+                                    <span class="badge bg-light text-dark">Gráficos</span>
+                                    <span class="badge bg-light text-dark">Open Source</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="border rounded p-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-calculator text-custom-red me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">SPSS</h6>
+                                        <small class="text-muted">Statistical Package for Social Sciences</small>
+                                    </div>
+                                </div>
+                                <p class="small mb-2">Pacote estatístico amplamente utilizado para análises descritivas e inferenciais em pesquisas de fisiologia do exercício.</p>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-dark">ANOVA</span>
+                                    <span class="badge bg-light text-dark">Regressão</span>
+                                    <span class="badge bg-light text-dark">Correlação</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="border rounded p-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fab fa-python text-custom-red me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Python</h6>
+                                        <small class="text-muted">Linguagem de programação</small>
+                                    </div>
+                                </div>
+                                <p class="small mb-2">Utilizado com bibliotecas como Pandas, NumPy, SciPy e Matplotlib para análise de dados e machine learning.</p>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-dark">Data Science</span>
+                                    <span class="badge bg-light text-dark">Machine Learning</span>
+                                    <span class="badge bg-light text-dark">Automação</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Softwares de Aquisição -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-download me-2"></i>Softwares de Aquisição de Dados</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="border rounded p-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-heartbeat text-custom-red me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">LabChart</h6>
+                                        <small class="text-muted">ADInstruments</small>
+                                    </div>
+                                </div>
+                                <p class="small mb-2">Software para aquisição e análise de dados fisiológicos em tempo real, especialmente para variáveis cardiovasculares.</p>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-dark">ECG</span>
+                                    <span class="badge bg-light text-dark">Pressão Arterial</span>
+                                    <span class="badge bg-light text-dark">Tempo Real</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="border rounded p-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-lungs text-custom-red me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">ParvoMedics</h6>
+                                        <small class="text-muted">Análise de gases respiratórios</small>
+                                    </div>
+                                </div>
+                                <p class="small mb-2">Sistema para medição de consumo de oxigênio, produção de CO2 e outros parâmetros respiratórios durante o exercício.</p>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-dark">VO2</span>
+                                    <span class="badge bg-light text-dark">VCO2</span>
+                                    <span class="badge bg-light text-dark">Calorimetria</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="border rounded p-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-bolt text-custom-red me-3" style="font-size: 2rem;"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">EMG Analysis</h6>
+                                        <small class="text-muted">Eletromiografia</small>
+                                    </div>
+                                </div>
+                                <p class="small mb-2">Software especializado para análise de sinais eletromiográficos e avaliação da ativação muscular.</p>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-dark">EMG</span>
+                                    <span class="badge bg-light text-dark">Ativação Muscular</span>
+                                    <span class="badge bg-light text-dark">Fadiga</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metodologias de Pesquisa -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-microscope me-2"></i>Principais Metodologias Aplicadas</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="icon-feature mb-3">
+                                    <i class="fas fa-running"></i>
+                                </div>
+                                <h6 class="fw-bold">Teste de Esforço Máximo</h6>
+                                <p class="small text-muted">Protocolos incrementais em esteira e cicloergômetro para determinação do VO2máx e limiares ventilatórios.</p>
+                                <ul class="list-unstyled small">
+                                    <li>• Protocolo de Bruce</li>
+                                    <li>• Protocolo de Balke</li>
+                                    <li>• Protocolo em Rampa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="icon-feature mb-3">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <h6 class="fw-bold">Avaliação de Força</h6>
+                                <p class="small text-muted">Métodos para quantificação de força muscular máxima e resistência muscular localizada.</p>
+                                <ul class="list-unstyled small">
+                                    <li>• 1RM (Uma Repetição Máxima)</li>
+                                    <li>• Dinamometria</li>
+                                    <li>• Contração Isométrica</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <div class="icon-feature mb-3">
+                                    <i class="fas fa-chart-area"></i>
+                                </div>
+                                <h6 class="fw-bold">Análise Biomecânica</h6>
+                                <p class="small text-muted">Avaliação de padrões de movimento e eficiência mecânica durante diferentes atividades físicas.</p>
+                                <ul class="list-unstyled small">
+                                    <li>• Análise Cinemática</li>
+                                    <li>• Plataforma de Força</li>
+                                    <li>• Economia de Movimento</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ferramentas Online -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-cloud me-2"></i>Ferramentas Online</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">GraphPad Prism</h6>
+                                <small class="text-muted">Análise estatística e criação de gráficos</small>
+                            </div>
+                            <a href="#" class="btn btn-outline-custom-red btn-sm">Acessar</a>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">Mendeley</h6>
+                                <small class="text-muted">Gerenciamento de referências bibliográficas</small>
+                            </div>
+                            <a href="#" class="btn btn-outline-custom-red btn-sm">Acessar</a>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">REDCap</h6>
+                                <small class="text-muted">Coleta e gerenciamento de dados de pesquisa</small>
+                            </div>
+                            <a href="#" class="btn btn-outline-custom-red btn-sm">Acessar</a>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">Google Colab</h6>
+                                <small class="text-muted">Ambiente de desenvolvimento Python</small>
+                            </div>
+                            <a href="#" class="btn btn-outline-custom-red btn-sm">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Protocolos Padronizados -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-file-alt me-2"></i>Protocolos Padronizados</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Teste Cardiopulmonar</h6>
+                                    <p class="mb-1 small">Protocolo padronizado para avaliação da capacidade aeróbia</p>
+                                    <small class="text-muted">Versão 2.1 - Última atualização: Jan/2025</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-custom-red btn-sm">Download</a>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Avaliação Antropométrica</h6>
+                                    <p class="mb-1 small">Procedimentos para medidas corporais e composição</p>
+                                    <small class="text-muted">Versão 1.8 - Última atualização: Dez/2024</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-custom-red btn-sm">Download</a>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Coleta de Dados EMG</h6>
+                                    <p class="mb-1 small">Protocolo para eletromiografia de superfície</p>
+                                    <small class="text-muted">Versão 3.0 - Última atualização: Nov/2024</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-custom-red btn-sm">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Treinamentos -->
+    <div class="row mt-4">
+        <div class="col-lg-12">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-4">
+                        <i class="fas fa-graduation-cap me-2"></i>Treinamentos Disponíveis
+                    </h5>
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <i class="fas fa-laptop-code icon-feature" style="font-size: 2rem;"></i>
+                            <h6 class="mt-2">Introdução ao R</h6>
+                            <button class="btn btn-custom-red btn-sm">Inscrever-se</button>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-chart-bar icon-feature" style="font-size: 2rem;"></i>
+                            <h6 class="mt-2">Análise Estatística</h6>
+                            <button class="btn btn-custom-red btn-sm">Inscrever-se</button>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-tools icon-feature" style="font-size: 2rem;"></i>
+                            <h6 class="mt-2">Uso de Equipamentos</h6>
+                            <button class="btn btn-custom-red btn-sm">Inscrever-se</button>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-database icon-feature" style="font-size: 2rem;"></i>
+                            <h6 class="mt-2">Gestão de Dados</h6>
+                            <button class="btn btn-custom-red btn-sm">Inscrever-se</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero-content fade-in">
+                    <div class="logo-container">
+                        <img src="{% static 'images/logo.png' %}" alt="Logo LAFISE" class="img-fluid">
+                    </div>
+                    <h1 class="hero-title">Laboratório de Fisiologia do Exercício</h1>
+                    <p class="hero-subtitle">Universidade Federal de Minas Gerais</p>
+                    <p class="hero-description">
+                        Ferramenta de documentação e gerenciamento de materiais e métodos do laboratório de fisiologia do exercício UFMG
+                    </p>
+                    <div class="mt-4">
+                        <a href="{% url 'referencias' %}" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-book me-2"></i>Explore as Referências
+                        </a>
+                        <a href="{% url 'metodos' %}" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-microscope me-2"></i>Conheça os Métodos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Funcionalidades -->
+<section class="content-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">O que oferecemos</h2>
+            <p class="section-subtitle">
+                Nosso sistema centraliza todas as informações importantes do laboratório em um local acessível e organizado
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon-feature">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h5 class="card-title">Referências Bibliográficas</h5>
+                        <p class="card-text">
+                            Acesso às principais referências científicas utilizadas em nossas pesquisas e estudos.
+                        </p>
+                        <a href="{% url 'referencias' %}" class="btn btn-custom-red">
+                            <i class="fas fa-arrow-right me-1"></i>Explorar
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon-feature">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h5 class="card-title">Métodos de Pesquisa</h5>
+                        <p class="card-text">
+                            Documentação completa dos métodos e procedimentos utilizados em nossas investigações científicas.
+                        </p>
+                        <a href="{% url 'metodos' %}" class="btn btn-custom-red">
+                            <i class="fas fa-arrow-right me-1"></i>Conhecer
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon-feature">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5 class="card-title">Equipamentos</h5>
+                        <p class="card-text">
+                            Catálogo completo dos equipamentos disponíveis e suas especificações técnicas.
+                        </p>
+                        <a href="{% url 'equipamentos' %}" class="btn btn-custom-red">
+                            <i class="fas fa-arrow-right me-1"></i>Ver Equipamentos
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon-feature">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h5 class="card-title">Publicações</h5>
+                        <p class="card-text">
+                            Artigos científicos publicados pelos pesquisadores do laboratório.
+                        </p>
+                        <a href="{% url 'artigos' %}" class="btn btn-custom-red">
+                            <i class="fas fa-arrow-right me-1"></i>Ler Artigos
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon-feature">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5 class="card-title">Nossa Equipe</h5>
+                        <p class="card-text">
+                            Conheça os pesquisadores, estudantes e colaboradores que fazem parte do LAFISE.
+                        </p>
+                        <a href="{% url 'integrantes' %}" class="btn btn-custom-red">
+                            <i class="fas fa-arrow-right me-1"></i>Conhecer Equipe
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="icon-feature">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h5 class="card-title">Agenda</h5>
+                        <p class="card-text">
+                            Acompanhe os eventos, reuniões e atividades programadas do laboratório.
+                        </p>
+                        <a href="{% url 'agenda' %}" class="btn btn-custom-red">
+                            <i class="fas fa-arrow-right me-1"></i>Ver Agenda
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Sobre o Laboratório -->
+<section class="content-section bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title text-start">Sobre o LAFISE</h2>
+                <p class="lead">
+                    O Laboratório de Fisiologia do Exercício da UFMG é um centro de excelência em pesquisa, 
+                    dedicado ao estudo dos aspectos fisiológicos do exercício físico e do desempenho humano.
+                </p>
+                <p>
+                    Nossa missão é produzir conhecimento científico de qualidade, formar pesquisadores competentes 
+                    e contribuir para o avanço da área de fisiologia do exercício no Brasil e no mundo.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-feature me-3" style="font-size: 2rem;">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Pesquisa Avançada</h6>
+                                <small class="text-muted">Métodos inovadores</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-feature me-3" style="font-size: 2rem;">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Formação</h6>
+                                <small class="text-muted">Capacitação de pesquisadores</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{% url 'historia' %}" class="btn btn-custom-red btn-lg">
+                    <i class="fas fa-history me-2"></i>Nossa História
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="card bg-custom-red text-white text-center">
+                            <div class="card-body">
+                                <h3 class="fw-bold">15+</h3>
+                                <p class="mb-0">Anos de Experiência</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-white text-custom-red text-center">
+                            <div class="card-body">
+                                <h3 class="fw-bold">50+</h3>
+                                <p class="mb-0">Publicações</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-white text-custom-red text-center">
+                            <div class="card-body">
+                                <h3 class="fw-bold">30+</h3>
+                                <p class="mb-0">Pesquisadores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-custom-red text-white text-center">
+                            <div class="card-body">
+                                <h3 class="fw-bold">100+</h3>
+                                <p class="mb-0">Estudos Realizados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title">Faça parte do nosso laboratório</h2>
+                <p class="section-subtitle">
+                    Interessado em colaborar conosco ou conhecer mais sobre nosso trabalho? 
+                    Entre em contato e descubra as oportunidades disponíveis.
+                </p>
+                <div class="mt-4">
+                    <a href="{% url 'integrantes' %}" class="btn btn-custom-red btn-lg me-3">
+                        <i class="fas fa-user-plus me-2"></i>Conhecer a Equipe
+                    </a>
+                    <a href="{% url 'grupo_cafezinho' %}" class="btn btn-outline-custom-red btn-lg">
+                        <i class="fas fa-coffee me-2"></i>Grupo do Cafezinho
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

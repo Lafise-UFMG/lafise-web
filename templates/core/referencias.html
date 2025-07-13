@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ page_title }} - LAFISE{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <i class="fas fa-book-open me-3"></i>Principais Referências Bibliográficas
+                </h1>
+                <p class="section-subtitle">
+                    Compilação das principais referências científicas utilizadas em nossas pesquisas e estudos
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Seção de Livros -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-book me-2"></i>Livros de Referência</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Exercise Physiology: Nutrition, Energy, and Human Performance</h6>
+                            <p class="mb-1 text-muted">McArdle, W. D., Katch, F. I., & Katch, V. L.</p>
+                            <small>8ª Edição - Lippincott Williams & Wilkins</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Physiological Adaptations to Physical Exercise</h6>
+                            <p class="mb-1 text-muted">Brooks, G. A., Fahey, T. D., & Baldwin, K. M.</p>
+                            <small>5ª Edição - McGraw-Hill Education</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">ACSM's Guidelines for Exercise Testing and Prescription</h6>
+                            <p class="mb-1 text-muted">American College of Sports Medicine</p>
+                            <small>11ª Edição - Wolters Kluwer</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Fisiologia do Exercício: Teoria e Aplicação</h6>
+                            <p class="mb-1 text-muted">Powers, S. K. & Howley, E. T.</p>
+                            <small>9ª Edição - Manole</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Artigos Fundamentais -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-file-alt me-2"></i>Artigos Fundamentais</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Skeletal muscle adaptations during early phase of heavy-resistance training</h6>
+                            <p class="mb-1 text-muted">Staron, R. S., et al.</p>
+                            <small>Journal of Applied Physiology (1994)</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Metabolic and performance responses to constant-load vs. variable-intensity exercise</h6>
+                            <p class="mb-1 text-muted">Laursen, P. B. & Jenkins, D. G.</p>
+                            <small>Sports Medicine (2002)</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Training-induced changes in mitochondrial enzymes</h6>
+                            <p class="mb-1 text-muted">Holloszy, J. O. & Coyle, E. F.</p>
+                            <small>Journal of Applied Physiology (1984)</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Physiological and biomechanical factors associated with running economy</h6>
+                            <p class="mb-1 text-muted">Saunders, P. U., et al.</p>
+                            <small>Sports Medicine (2004)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Periódicos -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-newspaper me-2"></i>Periódicos Principais</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">Journal of Applied Physiology</h6>
+                                <small class="text-muted">American Physiological Society</small>
+                            </div>
+                            <span class="badge badge-custom rounded-pill">IF: 3.5</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">Medicine & Science in Sports & Exercise</h6>
+                                <small class="text-muted">ACSM</small>
+                            </div>
+                            <span class="badge badge-custom rounded-pill">IF: 4.1</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">Sports Medicine</h6>
+                                <small class="text-muted">Springer</small>
+                            </div>
+                            <span class="badge badge-custom rounded-pill">IF: 8.7</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-1">European Journal of Applied Physiology</h6>
+                                <small class="text-muted">Springer</small>
+                            </div>
+                            <span class="badge badge-custom rounded-pill">IF: 2.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Diretrizes -->
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-clipboard-list me-2"></i>Diretrizes e Protocolos</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">ACSM Position Stand: Exercise and Physical Activity for Older Adults</h6>
+                            <small class="text-muted">American College of Sports Medicine (2009)</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">AHA Scientific Statement: Resistance Exercise in Cardiovascular Disease</h6>
+                            <small class="text-muted">American Heart Association (2007)</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">IOC Consensus Statement: Training the Elite Child Athlete</h6>
+                            <small class="text-muted">International Olympic Committee (2008)</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="fw-bold">Position Statement: Exercise and Acute Cardiovascular Events</h6>
+                            <small class="text-muted">ACSM and AHA (2007)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Bases de Dados -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-database me-2"></i>Bases de Dados Utilizadas</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3 h-100">
+                                <i class="fas fa-search icon-feature" style="font-size: 2rem;"></i>
+                                <h6 class="fw-bold mt-2">PubMed</h6>
+                                <small class="text-muted">Base de dados médica e biomédica</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3 h-100">
+                                <i class="fas fa-flask icon-feature" style="font-size: 2rem;"></i>
+                                <h6 class="fw-bold mt-2">Scopus</h6>
+                                <small class="text-muted">Base multidisciplinar de citações</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3 h-100">
+                                <i class="fas fa-graduation-cap icon-feature" style="font-size: 2rem;"></i>
+                                <h6 class="fw-bold mt-2">Web of Science</h6>
+                                <small class="text-muted">Plataforma de pesquisa acadêmica</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center mb-3">
+                            <div class="border rounded p-3 h-100">
+                                <i class="fas fa-university icon-feature" style="font-size: 2rem;"></i>
+                                <h6 class="fw-bold mt-2">SciELO</h6>
+                                <small class="text-muted">Biblioteca científica eletrônica</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dicas de Pesquisa -->
+        <div class="col-lg-12">
+            <div class="alert alert-custom">
+                <h5><i class="fas fa-lightbulb me-2"></i>Dicas para Pesquisa Bibliográfica</h5>
+                <ul class="mb-0">
+                    <li>Utilize palavras-chave específicas em inglês para resultados mais abrangentes</li>
+                    <li>Combine descritores com operadores booleanos (AND, OR, NOT)</li>
+                    <li>Verifique o fator de impacto dos periódicos antes da submissão</li>
+                    <li>Mantenha-se atualizado com as publicações mais recentes da área</li>
+                    <li>Utilize ferramentas de gestão de referências como Mendeley ou Zotero</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
