@@ -7,7 +7,7 @@
 
 ## Descrição
 
-Site institucional do **Laboratório de Fisiologia do Exercício (LAFISE)** da Universidade Federal de Minas Gerais. Apresenta informações sobre o laboratório, sua equipe, métodos, equipamentos e atividades.
+Site institucional do **Laboratório de Fisiologia do Exercício (LAFISE)** da Universidade Federal de Minas Gerais. Apresenta informações sobre o laboratório, sua história, equipe e publicações científicas.
 
 Este site é totalmente estático (HTML/CSS) e é hospedado via **GitHub Pages** a partir da pasta `docs/`.
 
@@ -22,14 +22,10 @@ Este site é totalmente estático (HTML/CSS) e é hospedado via **GitHub Pages**
 
 1. **Página Inicial** (`index.html`): Apresentação do laboratório
 2. **Principais Referências Bibliográficas** (`referencias.html`)
-3. **Agenda** (`agenda.html`)
-4. **Métodos e Softwares** (`metodos-softwares.html`)
-5. **Métodos** (`metodos.html`) — em desenvolvimento
-6. **Artigos** (`artigos.html`) — em desenvolvimento
-7. **Equipamentos** (`equipamentos.html`) — em desenvolvimento
-8. **Integrantes** (`integrantes.html`)
-9. **Grupo do Cafezinho** (`grupo-cafezinho.html`)
-10. **História** (`historia.html`)
+3. **Artigos** (`artigos.html`): publicações científicas do LAFISE (1984–2021)
+4. **Integrantes** (`integrantes.html`)
+5. **Grupo do Cafezinho** (`grupo-cafezinho.html`)
+6. **História** (`historia.html`)
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -44,11 +40,7 @@ lafise-web/
 ├── docs/                     # Site publicado pelo GitHub Pages
 │   ├── index.html
 │   ├── referencias.html
-│   ├── agenda.html
-│   ├── metodos-softwares.html
-│   ├── metodos.html
 │   ├── artigos.html
-│   ├── equipamentos.html
 │   ├── integrantes.html
 │   ├── grupo-cafezinho.html
 │   ├── historia.html
