@@ -21,11 +21,11 @@ Este site é totalmente estático (HTML/CSS) e é hospedado via **GitHub Pages**
 ## 🚀 Páginas do Site
 
 1. **Página Inicial** (`index.html`): Apresentação do laboratório
-2. **Principais Referências Bibliográficas** (`referencias.html`)
+2. **História** (`historia.html`)
 3. **Artigos** (`artigos.html`): publicações científicas do LAFISE (1984–2021)
-4. **Integrantes** (`integrantes.html`)
-5. **Grupo do Cafezinho** (`grupo-cafezinho.html`)
-6. **História** (`historia.html`)
+4. **Processo Seletivo** (`processo-seletivo.html`): informações sobre seleção do Mestrado/Doutorado em Ciências do Esporte
+5. **Integrantes** (`integrantes.html`): professores, doutorandos, mestrandos e iniciação científica
+6. **Linhas de Pesquisa** (`linhas-pesquisa.html`)
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -39,11 +39,11 @@ Este site é totalmente estático (HTML/CSS) e é hospedado via **GitHub Pages**
 lafise-web/
 ├── docs/                     # Site publicado pelo GitHub Pages
 │   ├── index.html
-│   ├── referencias.html
-│   ├── artigos.html
-│   ├── integrantes.html
-│   ├── grupo-cafezinho.html
 │   ├── historia.html
+│   ├── artigos.html
+│   ├── processo-seletivo.html
+│   ├── integrantes.html
+│   ├── linhas-pesquisa.html
 │   └── static/
 │       ├── css/style.css
 │       └── images/logo.png
