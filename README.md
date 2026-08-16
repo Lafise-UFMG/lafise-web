@@ -1,13 +1,15 @@
 # Sistema Web LAFISE - Laboratório de Fisiologia do Exercício
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![Django](https://img.shields.io/badge/Django-5.1.4-green.svg)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.7-purple.svg)
+![HTML5](https://img.shields.io/badge/HTML5-orange.svg)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-purple.svg)
+![GitHub Pages](https://img.shields.io/badge/Hospedagem-GitHub%20Pages-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Descrição
 
-Sistema web desenvolvido para o **Laboratório de Fisiologia do Exercício (LAFISE)** da Universidade Federal de Minas Gerais. Esta ferramenta de documentação e gerenciamento centraliza informações sobre materiais, métodos, equipamentos, equipe e atividades do laboratório.
+Site institucional do **Laboratório de Fisiologia do Exercício (LAFISE)** da Universidade Federal de Minas Gerais. Apresenta informações sobre o laboratório, sua equipe, métodos, equipamentos e atividades.
+
+Este site é totalmente estático (HTML/CSS) e é hospedado via **GitHub Pages** a partir da pasta `docs/`.
 
 ## ✨ Características Principais
 
@@ -15,135 +17,65 @@ Sistema web desenvolvido para o **Laboratório de Fisiologia do Exercício (LAFI
 - **Navegação Intuitiva**: Navbar com links organizados para todas as seções
 - **Design Responsivo**: Interface adaptada para dispositivos móveis e desktop
 - **Cores Institucionais**: Paleta de cores em vermelho e branco conforme solicitado
-- **Sistema Modular**: Arquitetura bem estruturada e de fácil manutenção
 
-## 🚀 Funcionalidades
+## 🚀 Páginas do Site
 
-### Páginas Implementadas
-
-1. **Página Inicial**: Landing page com apresentação do laboratório
-2. **Principais Referências Bibliográficas**: Compilação de literatura científica
-3. **Agenda**: Cronograma de eventos e atividades do laboratório
-4. **Métodos e Softwares**: Ferramentas computacionais e metodologias
-5. **Métodos**: Metodologias de pesquisa (em desenvolvimento)
-6. **Artigos**: Publicações científicas (em desenvolvimento)
-7. **Equipamentos**: Catálogo de equipamentos (em desenvolvimento)
-8. **Integrantes**: Apresentação da equipe completa
-9. **Grupo do Cafezinho**: Encontros informais da equipe
-10. **História**: Trajetória e evolução do laboratório
-
-### Recursos Técnicos
-
-- Interface responsiva com Bootstrap 5.3.7
-- Ícones Font Awesome para melhor experiência visual
-- Navegação com dropdown menus
-- Cards informativos e layouts modernos
-- Sistema de cores customizado
-- Animações CSS suaves
+1. **Página Inicial** (`index.html`): Apresentação do laboratório
+2. **Principais Referências Bibliográficas** (`referencias.html`)
+3. **Agenda** (`agenda.html`)
+4. **Métodos e Softwares** (`metodos-softwares.html`)
+5. **Métodos** (`metodos.html`) — em desenvolvimento
+6. **Artigos** (`artigos.html`) — em desenvolvimento
+7. **Equipamentos** (`equipamentos.html`) — em desenvolvimento
+8. **Integrantes** (`integrantes.html`)
+9. **Grupo do Cafezinho** (`grupo-cafezinho.html`)
+10. **História** (`historia.html`)
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Backend**: Django 5.1.4
-- **Frontend**: Bootstrap 5.3.7
-- **Ícones**: Font Awesome 6.5.0
-- **Linguagem**: Python 3.10+
-- **Banco de Dados**: SQLite (desenvolvimento)
-- **CSS**: Estilos customizados com variáveis CSS
-
-## 📋 Pré-requisitos
-
-- Python 3.10 ou superior
-- pip (gerenciador de pacotes Python)
-- Git
-
-## 🔧 Instalação e Configuração
-
-### 1. Clone o repositório
-
-```bash
-git clone <url-do-repositorio>
-cd lafise-web
-```
-
-### 2. Crie e ative um ambiente virtual
-
-```bash
-python -m venv .venv
-
-# No Linux/Mac:
-source .venv/bin/activate
-
-# No Windows:
-.venv\Scripts\activate
-```
-
-### 3. Instale as dependências
-
-```bash
-pip install django==5.1.4 pillow
-```
-
-### 4. Execute as migrações
-
-```bash
-python manage.py migrate
-```
-
-### 5. Crie um superusuário (opcional)
-
-```bash
-python manage.py createsuperuser
-```
-
-### 6. Execute o servidor de desenvolvimento
-
-```bash
-python manage.py runserver
-```
-
-O sistema estará disponível em: `http://127.0.0.1:8000/`
+- **HTML5** e **CSS3** (estilos customizados com variáveis CSS)
+- **Bootstrap 5.3.3** (via CDN)
+- **Font Awesome 6.5.0** (via CDN)
 
 ## 📁 Estrutura do Projeto
 
 ```
 lafise-web/
-├── lafise_project/          # Configurações principais do Django
-│   ├── __init__.py
-│   ├── settings.py          # Configurações do projeto
-│   ├── urls.py              # URLs principais
-│   └── wsgi.py
-├── core/                    # App principal
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py              # URLs do app
-│   └── views.py             # Views das páginas
-├── templates/               # Templates HTML
-│   ├── base.html            # Template base
-│   └── core/                # Templates específicos
-│       ├── home.html
-│       ├── referencias.html
-│       ├── agenda.html
-│       ├── metodos_softwares.html
-│       ├── integrantes.html
-│       ├── grupo_cafezinho.html
-│       ├── historia.html
-│       ├── metodos.html
-│       ├── artigos.html
-│       └── equipamentos.html
-├── static/                  # Arquivos estáticos
-│   ├── css/
-│   │   └── style.css        # Estilos customizados
-│   ├── js/
-│   └── images/
-│       └── logo.png         # Logo do laboratório
-├── manage.py                # Script de gerenciamento Django
-├── logo.png                 # Logo original
-└── README.md               # Este arquivo
+├── docs/                     # Site publicado pelo GitHub Pages
+│   ├── index.html
+│   ├── referencias.html
+│   ├── agenda.html
+│   ├── metodos-softwares.html
+│   ├── metodos.html
+│   ├── artigos.html
+│   ├── equipamentos.html
+│   ├── integrantes.html
+│   ├── grupo-cafezinho.html
+│   ├── historia.html
+│   └── static/
+│       ├── css/style.css
+│       └── images/logo.png
+├── .gitignore
+└── README.md
 ```
+
+## 🔧 Como visualizar localmente
+
+Não é necessário nenhum servidor de aplicação — basta abrir os arquivos HTML no navegador, ou servir a pasta `docs/` com um servidor estático simples:
+
+```bash
+cd docs
+python3 -m http.server 8000
+```
+
+O site estará disponível em `http://127.0.0.1:8000/`.
+
+## 🌐 Publicando no GitHub Pages
+
+1. No GitHub, acesse **Settings → Pages** do repositório
+2. Em **Build and deployment**, selecione a fonte **Deploy from a branch**
+3. Escolha a branch `main` e a pasta **`/docs`**
+4. Salve — o site ficará disponível em `https://<usuario>.github.io/<repositorio>/`
 
 ## 🎨 Design e Estilo
 
@@ -162,80 +94,18 @@ lafise-web/
 - **Icons**: Font Awesome para ícones consistentes
 - **Footer**: Rodapé com informações institucionais
 
-## 🔗 URLs Disponíveis
-
-- `/` - Página inicial
-- `/referencias/` - Principais referências bibliográficas
-- `/agenda/` - Agenda do laboratório
-- `/metodos-softwares/` - Métodos e softwares
-- `/metodos/` - Métodos de pesquisa
-- `/artigos/` - Artigos publicados
-- `/equipamentos/` - Equipamentos do laboratório
-- `/integrantes/` - Integrantes da equipe
-- `/grupo-cafezinho/` - Grupo do cafezinho
-- `/historia/` - História do laboratório
-- `/admin/` - Painel administrativo Django
-
 ## 📱 Responsividade
 
-O sistema foi desenvolvido com foco em responsividade, garantindo uma experiência consistente em:
-
-- **Desktop**: Layouts em múltiplas colunas
-- **Tablet**: Adaptação automática dos elementos
-- **Mobile**: Interface otimizada para telas pequenas
-
-### Breakpoints Bootstrap
-
-- **sm**: ≥576px (smartphones)
-- **md**: ≥768px (tablets)
-- **lg**: ≥992px (desktops)
-- **xl**: ≥1200px (desktops grandes)
-- **xxl**: ≥1400px (desktops extra grandes)
-
-## 🚀 Deploy e Produção
-
-### Configurações para Produção
-
-1. **Variáveis de Ambiente**:
-   - Configure `DEBUG = False`
-   - Defina uma `SECRET_KEY` segura
-   - Configure `ALLOWED_HOSTS`
-
-2. **Banco de Dados**:
-   - Migre de SQLite para PostgreSQL/MySQL
-   - Configure as credenciais do banco
-
-3. **Arquivos Estáticos**:
-   - Configure `STATIC_ROOT`
-   - Execute `python manage.py collectstatic`
-
-4. **Servidor Web**:
-   - Use Gunicorn + Nginx
-   - Configure SSL/HTTPS
-
-### Exemplo de Deploy com Gunicorn
-
-```bash
-pip install gunicorn
-gunicorn lafise_project.wsgi:application --bind 0.0.0.0:8000
-```
+O site foi desenvolvido com foco em responsividade, garantindo uma experiência consistente em desktop, tablet e mobile, usando os breakpoints padrão do Bootstrap (`sm`, `md`, `lg`, `xl`, `xxl`).
 
 ## 🤝 Contribuição
 
-### Como Contribuir
-
 1. Fork o projeto
-2. Crie uma branch para sua funcionalidade (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-### Padrões de Código
-
-- Siga as convenções PEP 8 para Python
-- Use nomes descritivos para variáveis e funções
-- Adicione comentários para código complexo
-- Mantenha templates organizados e semânticos
+2. Crie uma branch para sua alteração (`git checkout -b feature/AmazingFeature`)
+3. Edite os arquivos HTML/CSS em `docs/`
+4. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+5. Push para a branch (`git push origin feature/AmazingFeature`)
+6. Abra um Pull Request
 
 ## 📄 Licença
 
@@ -255,25 +125,6 @@ Para dúvidas ou sugestões sobre o sistema:
 - **Website**: [EEFFTO - UFMG](https://www.eeffto.ufmg.br/)
 - **Endereço**: Escola de Educação Física, Fisioterapia e Terapia Ocupacional - UFMG
 
-## 🔮 Próximas Funcionalidades
-
-- [ ] Sistema de autenticação de usuários
-- [ ] Painel administrativo personalizado
-- [ ] Sistema de upload de documentos
-- [ ] Calendário interativo
-- [ ] Sistema de notificações
-- [ ] API REST para integração
-- [ ] Dashboard com métricas
-- [ ] Sistema de comentários
-- [ ] Integração com redes sociais
-- [ ] Exportação de relatórios
-
-## 📊 Status do Projeto
-
-- ✅ **Concluído**: Estrutura base, navegação, páginas principais
-- 🚧 **Em Desenvolvimento**: Páginas de conteúdo específico
-- 📋 **Planejado**: Funcionalidades avançadas e integrações
-
 ---
 
-**LAFISE - Laboratório de Fisiologia do Exercício | UFMG - 2025**
+**LAFISE - Laboratório de Fisiologia do Exercício | UFMG**
