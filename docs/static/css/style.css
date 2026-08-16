@@ -100,6 +100,52 @@
     line-height: 1.6;
 }
 
+/* Compact page banner (dashboard-style home page) */
+.page-banner {
+    background: linear-gradient(135deg, var(--custom-red) 0%, var(--custom-dark-red) 100%);
+    color: white;
+    padding: 2.5rem 0;
+    margin-top: -80px;
+    padding-top: calc(2.5rem + 80px);
+}
+
+.page-banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.page-banner-subtitle {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+/* Dashboard blocks */
+.dashboard-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-row .stat-value {
+    font-weight: bold;
+    color: var(--custom-red);
+    font-size: 1.4rem;
+}
+
 /* Cards */
 .card {
     border: none;

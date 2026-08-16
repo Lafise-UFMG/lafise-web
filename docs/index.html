@@ -74,198 +74,146 @@
 
     <!-- Main Content -->
     <main class="main-content">
-<!-- Hero Section -->
-<section class="hero-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="hero-content fade-in">
-                    <div class="logo-container">
-                        <img src="static/images/logo.png" alt="Logo LAFISE" class="img-fluid">
-                    </div>
-                    <h1 class="hero-title">Laboratório de Fisiologia do Exercício</h1>
-                    <p class="hero-subtitle">Universidade Federal de Minas Gerais</p>
-                    <p class="hero-description">
-                        Ferramenta de documentação e gerenciamento de materiais e métodos do laboratório de fisiologia do exercício UFMG
-                    </p>
-                    <div class="mt-4">
-                        <a href="historia.html" class="btn btn-light btn-lg me-3">
-                            <i class="fas fa-landmark me-2"></i>Nossa História
-                        </a>
-                        <a href="artigos.html" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-newspaper me-2"></i>Veja os Artigos
-                        </a>
-                    </div>
-                </div>
-            </div>
+<!-- Banner compacto -->
+<section class="page-banner">
+    <div class="container text-center">
+        <img src="static/images/logo.png" alt="Logo LAFISE" height="56" class="mb-3">
+        <h1 class="page-banner-title">Laboratório de Fisiologia do Exercício</h1>
+        <p class="page-banner-subtitle">Universidade Federal de Minas Gerais &middot; desde 1976</p>
+        <div>
+            <a href="historia.html" class="btn btn-light me-2">
+                <i class="fas fa-landmark me-2"></i>Nossa História
+            </a>
+            <a href="artigos.html" class="btn btn-outline-light">
+                <i class="fas fa-newspaper me-2"></i>Veja os Artigos
+            </a>
         </div>
     </div>
 </section>
 
-<!-- Seção de Funcionalidades -->
+<!-- Painel principal -->
 <section class="content-section">
     <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">O que oferecemos</h2>
-            <p class="section-subtitle">
-                Nosso sistema centraliza todas as informações importantes do laboratório em um local acessível e organizado
-            </p>
-        </div>
-        
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 text-center">
+            <!-- Números -->
+            <div class="col-lg-4">
+                <div class="card h-100 dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-simple"></i> Números
+                    </div>
                     <div class="card-body">
-                        <div class="icon-feature">
-                            <i class="fas fa-landmark"></i>
+                        <div class="stat-row">
+                            <span>Anos de história</span>
+                            <span class="stat-value">50</span>
                         </div>
-                        <h5 class="card-title">Nossa História</h5>
-                        <p class="card-text">
-                            Conheça a trajetória do LAFISE desde sua fundação em 1976 até os dias de hoje.
-                        </p>
-                        <a href="historia.html" class="btn btn-custom-red">
-                            <i class="fas fa-arrow-right me-1"></i>Conhecer
-                        </a>
+                        <div class="stat-row">
+                            <span>Artigos publicados</span>
+                            <span class="stat-value">216</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Integrantes</span>
+                            <span class="stat-value">14</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Linhas de pesquisa</span>
+                            <span class="stat-value">7</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 text-center">
-                    <div class="card-body">
-                        <div class="icon-feature">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
-                        <h5 class="card-title">Publicações</h5>
-                        <p class="card-text">
-                            Artigos científicos publicados pelos pesquisadores do laboratório.
-                        </p>
-                        <a href="artigos.html" class="btn btn-custom-red">
-                            <i class="fas fa-arrow-right me-1"></i>Ler Artigos
+
+            <!-- Linhas de Pesquisa -->
+            <div class="col-lg-4">
+                <div class="card h-100 dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-diagram-project"></i> Linhas de Pesquisa
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-unstyled small mb-3">
+                            <li class="mb-2"><i class="fas fa-flask text-custom-red me-2"></i>Prevenção do choque hipertérmico induzido pelo exercício</li>
+                            <li class="mb-2"><i class="fas fa-flask text-custom-red me-2"></i>Estresse fisiológico e aclimatação ao calor e frio extremo</li>
+                            <li class="mb-2"><i class="fas fa-flask text-custom-red me-2"></i>Regulação neural, hormonal e nutricional da massa muscular</li>
+                            <li class="mb-0"><i class="fas fa-flask text-custom-red me-2"></i>Metabolismo, termorregulação e fadiga no exercício</li>
+                        </ul>
+                        <a href="linhas-pesquisa.html" class="btn btn-outline-custom-red btn-sm mt-auto">
+                            Ver todas <i class="fas fa-arrow-right ms-1"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 text-center">
-                    <div class="card-body">
-                        <div class="icon-feature">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h5 class="card-title">Nossa Equipe</h5>
-                        <p class="card-text">
-                            Conheça os pesquisadores, estudantes e colaboradores que fazem parte do LAFISE.
-                        </p>
-                        <a href="integrantes.html" class="btn btn-custom-red">
-                            <i class="fas fa-arrow-right me-1"></i>Conhecer Equipe
+            <!-- Últimos Artigos -->
+            <div class="col-lg-4">
+                <div class="card h-100 dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-newspaper"></i> Últimos Artigos
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <ul class="list-unstyled small mb-3">
+                            <li class="mb-3">
+                                <strong>Coelho LGM et al., 2021</strong><br>
+                                Head pre-cooling improves 5-km time trial performance in male amateur runners in the heat.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Martins YAT et al., 2021</strong><br>
+                                An exploratory study of short-term camping in Antarctica: Hormonal and mood states changes.
+                            </li>
+                            <li class="mb-0">
+                                <strong>Melo BP et al., 2021</strong><br>
+                                Thirty days of combined consumption of a high-fat diet and fructose-rich beverages promotes insulin resistance...
+                            </li>
+                        </ul>
+                        <a href="artigos.html" class="btn btn-outline-custom-red btn-sm mt-auto">
+                            Ver todos <i class="fas fa-arrow-right ms-1"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- Seção Sobre o Laboratório -->
-<section class="content-section bg-light">
-    <div class="container">
-        <div class="row align-items-center">
+        <div class="row g-4 mt-1">
+            <!-- História resumo -->
             <div class="col-lg-6">
-                <h2 class="section-title text-start">Sobre o LAFISE</h2>
-                <p class="lead">
-                    O Laboratório de Fisiologia do Exercício da UFMG é um centro de excelência em pesquisa, 
-                    dedicado ao estudo dos aspectos fisiológicos do exercício físico e do desempenho humano.
-                </p>
-                <p>
-                    Nossa missão é produzir conhecimento científico de qualidade, formar pesquisadores competentes 
-                    e contribuir para o avanço da área de fisiologia do exercício no Brasil e no mundo.
-                </p>
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-feature me-3" style="font-size: 2rem;">
-                                <i class="fas fa-microscope"></i>
-                            </div>
-                            <div>
-                                <h6 class="mb-1 fw-bold">Pesquisa Avançada</h6>
-                                <small class="text-muted">Métodos inovadores</small>
-                            </div>
-                        </div>
+                <div class="card h-100 dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-landmark"></i> Nossa História
                     </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-feature me-3" style="font-size: 2rem;">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div>
-                                <h6 class="mb-1 fw-bold">Formação</h6>
-                                <small class="text-muted">Capacitação de pesquisadores</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="historia.html" class="btn btn-custom-red btn-lg">
-                    <i class="fas fa-landmark me-2"></i>Nossa História
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <div class="row g-3">
-                    <div class="col-6">
-                        <div class="card bg-custom-red text-white text-center">
-                            <div class="card-body">
-                                <h3 class="fw-bold">15+</h3>
-                                <p class="mb-0">Anos de Experiência</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card bg-white text-custom-red text-center">
-                            <div class="card-body">
-                                <h3 class="fw-bold">50+</h3>
-                                <p class="mb-0">Publicações</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card bg-white text-custom-red text-center">
-                            <div class="card-body">
-                                <h3 class="fw-bold">30+</h3>
-                                <p class="mb-0">Pesquisadores</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card bg-custom-red text-white text-center">
-                            <div class="card-body">
-                                <h3 class="fw-bold">100+</h3>
-                                <p class="mb-0">Estudos Realizados</p>
-                            </div>
-                        </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="mb-3">
+                            Fundado em 1976, o LAFISE é um dos laboratórios pioneiros em fisiologia do exercício
+                            no Brasil. Ao longo de quase 50 anos, formou pesquisadores, publicou mais de 200
+                            artigos científicos e se tornou referência nacional na área.
+                        </p>
+                        <a href="historia.html" class="btn btn-custom-red btn-sm mt-auto align-self-start">
+                            Saiba mais <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- Call to Action -->
-<section class="content-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-title">Faça parte do nosso laboratório</h2>
-                <p class="section-subtitle">
-                    Interessado em colaborar conosco ou conhecer mais sobre nosso trabalho? 
-                    Entre em contato e descubra as oportunidades disponíveis.
-                </p>
-                <div class="mt-4">
-                    <a href="integrantes.html" class="btn btn-custom-red btn-lg me-3">
-                        <i class="fas fa-user-plus me-2"></i>Conhecer a Equipe
-                    </a>
-                    <a href="processo-seletivo.html" class="btn btn-outline-custom-red btn-lg">
-                        <i class="fas fa-clipboard-list me-2"></i>Processo Seletivo
-                    </a>
+            <!-- Contato / Processo Seletivo -->
+            <div class="col-lg-6">
+                <div class="card h-100 dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-address-card"></i> Contato &amp; Processo Seletivo
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="mb-1"><strong>Coordenador:</strong> Samuel Penna Wanner</p>
+                        <p class="mb-3">
+                            <a href="mailto:samuelwanner@eeffto.ufmg.br">samuelwanner@eeffto.ufmg.br</a>
+                        </p>
+                        <p class="mb-3">
+                            Interessado em ingressar no Programa de Pós-Graduação em Ciências do Esporte?
+                        </p>
+                        <div class="mt-auto">
+                            <a href="processo-seletivo.html" class="btn btn-custom-red btn-sm me-2">
+                                <i class="fas fa-clipboard-list me-1"></i>Processo Seletivo
+                            </a>
+                            <a href="integrantes.html" class="btn btn-outline-custom-red btn-sm">
+                                <i class="fas fa-users me-1"></i>Conhecer Equipe
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
